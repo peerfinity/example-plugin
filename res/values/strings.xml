@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chat_app_name">example chat app</string>
+
+    <string name="chat_refreshing">Refreshing chat</string>
+
+    <string name="main_chat_hint">Enter text</string>
+    <string name="main_chat_post">Post</string>
+
+    <string name="empty_connecting">Connecting</string>
+    <string name="empty_connecting_more"></string>
+
+    <string name="empty_connected">No Posts</string>
+    <string name="empty_connected_more">No posts in this room.</string>
+
+    <string name="dialog_clear_title">Clear editor contents</string>
+
+    <string name="dialog_clear_clear">Clear</string>
+    <string name="dialog_clear_dismiss">Dismiss</string>
+
+</resources>

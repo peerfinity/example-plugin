@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout01" android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:padding="2px">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+	 	android:layout_width="wrap_content"
+	  	android:id="@+id/LinearLayout01"
+	  	android:orientation="vertical"
+	  	>
+
+		<ImageView
+			android:id="@+id/peerimage" 
+			android:src="@drawable/profilepic"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			/>
+	
+		<TextView
+			android:layout_width="wrap_content" 
+			android:text="peer name"
+			android:id="@+id/peername"
+			android:layout_height="wrap_content"
+			android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColorHighlight= "#ffffff"
+            android:textColor= "#bbbbbb"
+			android:scrollHorizontally="true"
+			android:maxWidth="48dip"/>
+			
+	</LinearLayout>
+	
+		<TextView
+			android:id="@+id/posttext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:textColorHighlight= "#ffffff"
+            android:textColor= "#bbbbbb"
+			android:text=""
+			android:layout_marginLeft="5dip"
+			android:layout_toRightOf="@+id/LinearLayout01"/>
+
+		<LinearLayout
+			android:id="@+id/intobject" 
+	  		android:orientation="horizontal"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+	  		android:layout_below="@+id/posttext"
+	  		android:layout_alignLeft="@+id/posttext"
+	  		>
+		</LinearLayout>
+	
+		<TextView
+			android:id="@+id/posttime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="post time"
+	  		android:layout_below="@+id/posttext"
+	  		android:layout_alignParentRight="true"
+			/>
+
+</RelativeLayout>

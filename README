@@ -1,0 +1,42 @@
+WARNING: ************************************************
+WARNING: * Not quite ready yet, not all steps in place. *
+WARNING: * This warning will be removed in days.        *
+WARNING: ************************************************
+
+Peerfinity Android example chat app
+===================================
+
+This is a demostration application for the Peerfinity framwork.
+
+To get the client library and for more information please vist the website.
+
+http://www.peerfinity.com
+
+Please review license before use.
+
+Getting Started
+===============
+
+1. Download the latest appcastclient.jar from www.peerfinity.com.
+2. Download the Appcast.apk from www.peerfinity.com.
+3. Download the development server from www.peerfinity.com.
+3. Import source code into favorite Java IDE (Android capable).
+4. Add the appcastclient.jar to the project's imported libraries.
+5. Launch Android emulator and install the Appcast.apk.
+6. Launch the Development Server, making note of the IP.
+7. Launch the Peerfinty app in the emulator.
+8. Goto settings and change to development mode, entering the IP address of the Development server.
+
+Creating your own app
+=====================
+
+For full details on creating plugins see the peerfinity website.
+
+To quickly get unique chat app do the following:
+
+1. Refactor com.example.chat.Chat to your own unique ID.
+2. Update all the corresponding references in the Android Manifest.
+3. Register your unique data feed ID at peerfinity. (optional)
+
+This has caused your app to broadcast and send data on its own unique data feed.
+

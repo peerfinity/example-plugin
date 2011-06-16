@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.Chat"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <application android:icon="@drawable/icon" android:label="@string/chat_app_name">
+
+		<activity android:name=".Chat"
+			android:label="@string/chat_app_name" android:icon="@drawable/icon"
+			android:configChanges="keyboardHidden|orientation">
+
+			<intent-filter>
+				<action android:name="com.peerfinity.client.LAUNCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+
+			<intent-filter>
+				<action android:name="com.peerfinity.client.DATAFEED" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+
+		</activity>
+
+
+    </application>
+</manifest>

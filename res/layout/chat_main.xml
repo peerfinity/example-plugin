@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout01" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<EditText android:layout_width="wrap_content"
+		android:id="@+id/EditText01" android:lines="2"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/Button01"
+		android:layout_alignParentLeft="true" />
+
+	<LinearLayout android:id="@+id/LinearLayoutPkgs"
+		android:layout_alignParentTop="@+id/EditText01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent" />
+
+	<Button android:layout_alignParentRight="true" android:text="@string/main_chat_post"
+		android:id="@+id/Button01" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignBottom="@+id/EditText01"
+		android:layout_width="wrap_content" />
+
+	<ImageView android:id="@+id/imageConnectionStatus"
+		android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+		android:layout_width="wrap_content" android:src="@drawable/iconoffline"
+		android:layout_height="wrap_content" />
+
+	<LinearLayout android:id="@+id/LinearLayoutPosts"
+		android:layout_alignBottom="@+id/EditText01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent" />
+
+	<FrameLayout android:id="@+id/android:emptygroup"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:id="@+id/android:empty"
+			android:orientation="vertical" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center">
+
+			<TextView android:id="@+id/reasonHeader"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:text="@string/empty_connecting"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView android:id="@+id/reasonMore" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:text="@string/empty_connecting_more" />
+		</LinearLayout>
+
+
+		<LinearLayout android:id="@+id/refreshing"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:background="#bb000000" android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:layout_gravity="top">
+
+			<TextView android:id="@+id/refreshText"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginRight="30dip" android:layout_gravity="center"
+				android:text="@string/chat_refreshing" android:gravity="center_horizontal" />
+
+			<ProgressBar android:id="@+id/ProgressBar01"
+				android:gravity="center_horizontal" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_centerVertical="true"
+				android:layout_alignParentRight="true" android:layout_marginTop="1dip"
+				android:layout_marginBottom="1dip" style="?android:attr/progressBarStyleSmall"
+				android:layout_gravity="center_vertical" />
+
+		</LinearLayout>
+
+	</FrameLayout>
+
+	<ListView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/EditText01" android:id="@+id/android:list" />
+
+</RelativeLayout>
